@@ -1,4 +1,6 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useEffect } from 'react'
+import { authClient } from '#/lib/auth-client'
 import { AuthForm } from './auth-form'
 
 export const Route = createFileRoute('/_auth/signin')({
@@ -6,5 +8,7 @@ export const Route = createFileRoute('/_auth/signin')({
 })
 
 function SignInRoute() {
-  return <AuthForm mode="signin" />
+  
+
+  return <AuthForm mode="signin" redirectURL="/home" />
 }

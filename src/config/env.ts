@@ -11,5 +11,5 @@ export const env = {
   GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET as string,
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID as string,
   GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET as string,
-  CLIENT_URL: process.env.CLIENT_URL as string
+  CLIENT_URL: process.env.CLIENT_URL as string,
 } as const

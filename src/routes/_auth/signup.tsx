@@ -6,5 +6,5 @@ export const Route = createFileRoute('/_auth/signup')({
 })
 
 function SignUpRoute() {
-  return <AuthForm mode="signup" />
+  return <AuthForm mode="signup" redirectURL="/home" />
 }

@@ -12,6 +12,8 @@ import appCss from '../styles.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
 
+import { Toaster } from '#/components/ui/sonner'
+
 interface MyRouterContext {
   queryClient: QueryClient
 }
@@ -40,15 +42,13 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
   shellComponent: RootDocument,
 })
 
-import { Toaster } from '#/components/ui/sonner'
-
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="bg-background text-foreground antialiased">
         {children}
         <Toaster />
         <TanStackDevtools

@@ -49,7 +49,9 @@ function Home() {
               Scaling through decentralized venture architecture
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-neutral-400">
-              We build companies in weeks rather than quarters, leveraging high-fidelity design standards and automated engineering guardrails.
+              We build companies in weeks rather than quarters, leveraging
+              high-fidelity design standards and automated engineering
+              guardrails.
             </p>
           </div>
           <div className="flex items-center justify-between border-t border-neutral-800 pt-4 text-xs text-neutral-500">
@@ -168,7 +170,10 @@ function Home() {
           </a>
 
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-400">
-            <a href="#how-it-works" className="hover:text-white transition-colors">
+            <a
+              href="#how-it-works"
+              className="hover:text-white transition-colors"
+            >
               Process
             </a>
             <a href="#proof" className="hover:text-white transition-colors">
@@ -207,7 +212,9 @@ function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
-            Outline your thoughts and let Aura output executive-ready, high-end layouts. Built for founders, consultants, and leaders who refuse ugly templates.
+            Outline your thoughts and let Aura output executive-ready, high-end
+            layouts. Built for founders, consultants, and leaders who refuse
+            ugly templates.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -252,15 +259,16 @@ function Home() {
           {/* Center Main Slide Mockup (Floating Front) */}
           <div className="relative w-[90%] md:w-[70%] aspect-[16/10] bg-neutral-900 border border-neutral-800/80 rounded-xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transition-all duration-700 ease-out transform group-hover:-translate-y-4 group-hover:scale-[1.02] overflow-hidden z-20">
             <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-[var(--primary)]/60 to-transparent" />
-            <div className="w-full h-full">
-              {proofSlides[2].content}
-            </div>
+            <div className="w-full h-full">{proofSlides[2].content}</div>
           </div>
         </div>
       </section>
 
       {/* How it Works Section */}
-      <section id="how-it-works" className="py-24 border-t border-neutral-900 bg-neutral-950/50 relative">
+      <section
+        id="how-it-works"
+        className="py-24 border-t border-neutral-900 bg-neutral-950/50 relative"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
             <span className="text-xs uppercase tracking-widest text-[var(--primary)] font-semibold">
@@ -270,7 +278,8 @@ function Home() {
               From raw thought to elite layout
             </h2>
             <p className="text-neutral-400">
-              No templates. No placeholder shapes. Just gorgeous typography and grids.
+              No templates. No placeholder shapes. Just gorgeous typography and
+              grids.
             </p>
           </div>
 
@@ -278,14 +287,19 @@ function Home() {
             {/* Step 1 */}
             <div className="flex flex-col space-y-6 p-6 rounded-2xl border border-neutral-900 bg-neutral-900/20 backdrop-blur-sm relative group hover:border-neutral-800 transition-colors">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-[var(--primary)]">01 / CONCEPT</span>
-                <span className="text-xs text-neutral-500 uppercase">Input</span>
+                <span className="text-sm font-semibold text-[var(--primary)]">
+                  01 / CONCEPT
+                </span>
+                <span className="text-xs text-neutral-500 uppercase">
+                  Input
+                </span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-white">
                 Provide an outline or prompt
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed">
-                Paste your rough meeting notes, product outline, or pitch ideas. Aura accepts nested hierarchies, raw bullets, or plain essays.
+                Paste your rough meeting notes, product outline, or pitch ideas.
+                Aura accepts nested hierarchies, raw bullets, or plain essays.
               </p>
               <div className="mt-4 rounded-xl border border-neutral-800 bg-neutral-950 p-4 aspect-[16/10] flex flex-col justify-between text-left text-xs font-mono text-neutral-500 select-none">
                 <span className="text-green-500"># Input Outline</span>
@@ -295,42 +309,59 @@ function Home() {
                   <div className="h-1.5 w-[65%] bg-neutral-800 rounded pl-4" />
                   <div className="h-1.5 w-[50%] bg-neutral-800 rounded pl-4" />
                 </div>
-                <span className="text-[var(--primary)] cursor-pulse">_ Generating structured layout</span>
+                <span className="text-[var(--primary)] cursor-pulse">
+                  _ Generating structured layout
+                </span>
               </div>
             </div>
 
             {/* Step 2 */}
             <div className="flex flex-col space-y-6 p-6 rounded-2xl border border-neutral-900 bg-neutral-900/20 backdrop-blur-sm relative group hover:border-neutral-800 transition-colors">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-[var(--primary)]">02 / STRUCTURE</span>
-                <span className="text-xs text-neutral-500 uppercase">Processing</span>
+                <span className="text-sm font-semibold text-[var(--primary)]">
+                  02 / STRUCTURE
+                </span>
+                <span className="text-xs text-neutral-500 uppercase">
+                  Processing
+                </span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-white">
                 AI designs & builds context
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed">
-                Instead of wrapping elements in pre-designed templates, Aura parses semantic hierarchy, formats custom grids, and selects Noto Serif pairings.
+                Instead of wrapping elements in pre-designed templates, Aura
+                parses semantic hierarchy, formats custom grids, and selects
+                Noto Serif pairings.
               </p>
               <div className="mt-4 rounded-xl border border-neutral-800 bg-neutral-950 p-4 aspect-[16/10] flex flex-col justify-center items-center text-center space-y-2 select-none">
                 <div className="p-2.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/20 animate-spin duration-3000">
                   <Sparkles className="size-5" />
                 </div>
-                <span className="text-xs font-medium text-neutral-400">Layout Optimization Active</span>
-                <span className="text-[10px] text-neutral-600 font-mono">1.18px asymmetric grid lines aligned</span>
+                <span className="text-xs font-medium text-neutral-400">
+                  Layout Optimization Active
+                </span>
+                <span className="text-[10px] text-neutral-600 font-mono">
+                  1.18px asymmetric grid lines aligned
+                </span>
               </div>
             </div>
 
             {/* Step 3 */}
             <div className="flex flex-col space-y-6 p-6 rounded-2xl border border-neutral-900 bg-neutral-900/20 backdrop-blur-sm relative group hover:border-neutral-800 transition-colors">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-[var(--primary)]">03 / DELIVER</span>
-                <span className="text-xs text-neutral-500 uppercase">Export</span>
+                <span className="text-sm font-semibold text-[var(--primary)]">
+                  03 / DELIVER
+                </span>
+                <span className="text-xs text-neutral-500 uppercase">
+                  Export
+                </span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-white">
                 Export-ready presentation
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed">
-                Walk away with vector-perfect layouts. Export directly to PowerPoint (PPTX), vector PDF, or share via a premium web link.
+                Walk away with vector-perfect layouts. Export directly to
+                PowerPoint (PPTX), vector PDF, or share via a premium web link.
               </p>
               <div className="mt-4 rounded-xl border border-neutral-800 bg-neutral-950 p-4 aspect-[16/10] flex flex-col justify-between text-xs select-none">
                 <div className="flex items-center justify-between border-b border-neutral-900 pb-2 text-[10px] text-neutral-400 uppercase tracking-wider font-semibold">
@@ -339,15 +370,21 @@ function Home() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center justify-between p-1.5 rounded bg-neutral-900/60 border border-neutral-800">
-                    <span className="text-neutral-300">Editable PowerPoint (.pptx)</span>
+                    <span className="text-neutral-300">
+                      Editable PowerPoint (.pptx)
+                    </span>
                     <FileDown className="size-3.5 text-[var(--primary)]" />
                   </div>
                   <div className="flex items-center justify-between p-1.5 rounded bg-neutral-900/60 border border-neutral-800">
-                    <span className="text-neutral-300">High-Res Print PDF (.pdf)</span>
+                    <span className="text-neutral-300">
+                      High-Res Print PDF (.pdf)
+                    </span>
                     <FileDown className="size-3.5 text-[var(--primary)]" />
                   </div>
                 </div>
-                <span className="text-[10px] text-neutral-600 font-mono text-center">Output generated in 4.2 seconds</span>
+                <span className="text-[10px] text-neutral-600 font-mono text-center">
+                  Output generated in 4.2 seconds
+                </span>
               </div>
             </div>
           </div>
@@ -368,7 +405,8 @@ function Home() {
               See the design quality yourself
             </h2>
             <p className="text-neutral-400">
-              Interactive slides designed by Aura's core engine. Select an industry theme below to test layout variance and clean structure.
+              Interactive slides designed by Aura's core engine. Select an
+              industry theme below to test layout variance and clean structure.
             </p>
           </div>
 
@@ -410,7 +448,10 @@ function Home() {
       </section>
 
       {/* Feature Grid */}
-      <section id="features" className="py-24 border-t border-neutral-900 bg-neutral-950/40">
+      <section
+        id="features"
+        className="py-24 border-t border-neutral-900 bg-neutral-950/40"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
             <span className="text-xs uppercase tracking-widest text-[var(--primary)] font-semibold">
@@ -420,7 +461,8 @@ function Home() {
               Every detail, considered
             </h2>
             <p className="text-neutral-400 text-sm">
-              We ditched template-based algorithms to build a layout system that thinks like a designer.
+              We ditched template-based algorithms to build a layout system that
+              thinks like a designer.
             </p>
           </div>
 
@@ -435,7 +477,9 @@ function Home() {
                   Asymmetric layout generator
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  Avoids template symmetry. Aura automatically creates visual anchors on the page through deliberate whitespace, varying element widths, and balanced grid margins.
+                  Avoids template symmetry. Aura automatically creates visual
+                  anchors on the page through deliberate whitespace, varying
+                  element widths, and balanced grid margins.
                 </p>
               </CardContent>
             </Card>
@@ -450,7 +494,9 @@ function Home() {
                   Serif typography pairings
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  We match Noto Serif with high-quality body systems like Public Sans. We lock in tight kerning and generous line heights to preserve editorial publishing aesthetics.
+                  We match Noto Serif with high-quality body systems like Public
+                  Sans. We lock in tight kerning and generous line heights to
+                  preserve editorial publishing aesthetics.
                 </p>
               </CardContent>
             </Card>
@@ -465,7 +511,9 @@ function Home() {
                   Responsive design frames
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  Aura generated slides render perfectly across standard desktop projectors, massive mobile screens, web browsers, or standard printed formats.
+                  Aura generated slides render perfectly across standard desktop
+                  projectors, massive mobile screens, web browsers, or standard
+                  printed formats.
                 </p>
               </CardContent>
             </Card>
@@ -480,7 +528,9 @@ function Home() {
                   PowerPoint editable exports
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  Export slides to editable PowerPoint objects. No flat backgrounds — change text layers, alter vector shapes, or re-arrange grids inside Microsoft Office or Keynote.
+                  Export slides to editable PowerPoint objects. No flat
+                  backgrounds — change text layers, alter vector shapes, or
+                  re-arrange grids inside Microsoft Office or Keynote.
                 </p>
               </CardContent>
             </Card>
@@ -495,7 +545,9 @@ function Home() {
                   Semantic version control
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  Rewind or branch versions of your design outline. Instantly apply color schema changes globally across all historical slides in one click.
+                  Rewind or branch versions of your design outline. Instantly
+                  apply color schema changes globally across all historical
+                  slides in one click.
                 </p>
               </CardContent>
             </Card>
@@ -510,7 +562,9 @@ function Home() {
                   Brand identity lock
                 </h3>
                 <p className="text-xs text-neutral-400 leading-relaxed">
-                  Lock in your brand colors, fonts, and assets. Aura restricts layout variations to only combinations that maintain strict compliance with your design system.
+                  Lock in your brand colors, fonts, and assets. Aura restricts
+                  layout variations to only combinations that maintain strict
+                  compliance with your design system.
                 </p>
               </CardContent>
             </Card>
@@ -522,30 +576,43 @@ function Home() {
       <section className="py-20 border-y border-neutral-900 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="space-y-2 max-w-xs text-left">
-            <h3 className="font-heading text-2xl font-semibold text-white">Trusted by builders</h3>
+            <h3 className="font-heading text-2xl font-semibold text-white">
+              Trusted by builders
+            </h3>
             <p className="text-xs text-neutral-500">
-              Leading founders and consultants rely on Aura to save design cycles.
+              Leading founders and consultants rely on Aura to save design
+              cycles.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
             <div className="space-y-4 border-l border-neutral-800 pl-6">
               <p className="text-sm italic text-neutral-300 font-light">
-                "Our Seed deck generated by Aura raised $2.4M. The investors specifically commented on how structured and clean the visual layout was. They couldn't tell it was AI."
+                "Our Seed deck generated by Aura raised $2.4M. The investors
+                specifically commented on how structured and clean the visual
+                layout was. They couldn't tell it was AI."
               </p>
               <div className="text-xs">
                 <span className="font-semibold text-white">Marcus Vance</span>
-                <span className="text-neutral-500"> — Founder, Helius Labs</span>
+                <span className="text-neutral-500">
+                  {' '}
+                  — Founder, Helius Labs
+                </span>
               </div>
             </div>
 
             <div className="space-y-4 border-l border-neutral-800 pl-6">
               <p className="text-sm italic text-neutral-300 font-light">
-                "Standard AI slide makers feel childish. Aura matches the typographic hierarchy I'd build in InDesign. Essential for our client proposals."
+                "Standard AI slide makers feel childish. Aura matches the
+                typographic hierarchy I'd build in InDesign. Essential for our
+                client proposals."
               </p>
               <div className="text-xs">
                 <span className="font-semibold text-white">Elena Rostova</span>
-                <span className="text-neutral-500"> — Principal, Strategy Group</span>
+                <span className="text-neutral-500">
+                  {' '}
+                  — Principal, Strategy Group
+                </span>
               </div>
             </div>
           </div>
@@ -565,7 +632,8 @@ function Home() {
             Simple, honest pricing
           </h2>
           <p className="text-neutral-400">
-            Start generating slides for free. Upgrade as your pitch frequency increases.
+            Start generating slides for free. Upgrade as your pitch frequency
+            increases.
           </p>
         </div>
 
@@ -574,12 +642,18 @@ function Home() {
           <div className="flex flex-col justify-between p-8 rounded-2xl border border-neutral-900 bg-neutral-900/10 backdrop-blur-sm relative group hover:border-neutral-850 transition-all">
             <div className="space-y-6">
               <div>
-                <h3 className="font-heading text-xl font-semibold text-neutral-300">Starter</h3>
-                <p className="text-xs text-neutral-500 mt-1">For occasional pitches and outlines.</p>
+                <h3 className="font-heading text-xl font-semibold text-neutral-300">
+                  Starter
+                </h3>
+                <p className="text-xs text-neutral-500 mt-1">
+                  For occasional pitches and outlines.
+                </p>
               </div>
 
               <div className="flex items-baseline">
-                <span className="font-heading text-5xl font-bold text-white">$0</span>
+                <span className="font-heading text-5xl font-bold text-white">
+                  $0
+                </span>
                 <span className="text-neutral-500 text-xs ml-2">/ month</span>
               </div>
 
@@ -602,7 +676,10 @@ function Home() {
               </ul>
             </div>
 
-            <Button variant="outline" className="w-full mt-8 rounded-full border-neutral-800 text-white hover:bg-neutral-900">
+            <Button
+              variant="outline"
+              className="w-full mt-8 rounded-full border-neutral-800 text-white hover:bg-neutral-900"
+            >
               Get Started
             </Button>
           </div>
@@ -615,12 +692,18 @@ function Home() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="font-heading text-xl font-semibold text-white">Professional</h3>
-                <p className="text-xs text-neutral-400 mt-1">For active presenters, consultants, and agencies.</p>
+                <h3 className="font-heading text-xl font-semibold text-white">
+                  Professional
+                </h3>
+                <p className="text-xs text-neutral-400 mt-1">
+                  For active presenters, consultants, and agencies.
+                </p>
               </div>
 
               <div className="flex items-baseline">
-                <span className="font-heading text-5xl font-bold text-white">$24</span>
+                <span className="font-heading text-5xl font-bold text-white">
+                  $24
+                </span>
                 <span className="text-neutral-500 text-xs ml-2">/ month</span>
               </div>
 
@@ -662,7 +745,8 @@ function Home() {
               Create slides that command respect
             </h2>
             <p className="text-neutral-400 text-sm md:text-base leading-relaxed max-w-lg mx-auto">
-              Save hours formatting borders and fonts. Input your outline and get a designer-level deck in seconds.
+              Save hours formatting borders and fonts. Input your outline and
+              get a designer-level deck in seconds.
             </p>
             <div className="pt-4">
               <Button
