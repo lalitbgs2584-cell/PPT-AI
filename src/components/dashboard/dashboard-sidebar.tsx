@@ -45,7 +45,7 @@ const navItems = [
 
 export function DashboardSidebar({ session, onSignOut }: DashboardSidebarProps) {
   return (
-    <aside className="sticky top-0 flex h-screen w-[264px] min-w-[264px] max-w-[264px] flex-none flex-col justify-between overflow-y-auto border-r border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.018),rgba(255,255,255,0.008))] text-neutral-100">
+    <aside className="flex w-full flex-col justify-between border-b border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.018),rgba(255,255,255,0.008))] text-neutral-100 lg:fixed lg:inset-y-0 lg:left-0 lg:z-30 lg:h-screen lg:w-[264px] lg:min-w-[264px] lg:max-w-[264px] lg:border-b-0 lg:border-r lg:overflow-y-auto">
       <div className="flex flex-col gap-5 p-4">
         <Link
           to="/home"

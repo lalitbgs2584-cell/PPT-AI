@@ -31,9 +31,11 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   }
 
   return (
-    <div className="grid min-h-screen w-full overflow-hidden bg-neutral-950 font-sans text-neutral-100 lg:grid-cols-[264px_minmax(0,1fr)]">
+    <div className="relative min-h-screen w-full overflow-hidden bg-neutral-950 font-sans text-neutral-100">
       <DashboardSidebar session={session} onSignOut={handleSignOut} />
-      <main className="min-w-0 overflow-hidden bg-neutral-950">{children}</main>
+      <main className="min-w-0 bg-neutral-950 lg:ml-[264px] lg:h-screen lg:overflow-hidden">
+        {children}
+      </main>
     </div>
   )
 }
