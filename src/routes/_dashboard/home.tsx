@@ -20,7 +20,7 @@ export const Route = createFileRoute('/_dashboard/home')({
       deckId: (search.deckId as string) || undefined,
     }
   },
-  component: HomeRoute,
+  component: HomeRoute
 })
 
 function HomeRoute() {

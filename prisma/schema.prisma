@@ -8,15 +8,16 @@ datasource db {
 }
 
 model User {
-  id            String    @id
+  id            String         @id
   name          String
   email         String
-  emailVerified Boolean   @default(false)
+  emailVerified Boolean        @default(false)
   image         String?
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
   sessions      Session[]
   accounts      Account[]
+  presentations Presentation[]
 
   @@unique([email])
   @@map("user")
@@ -68,4 +69,49 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+model Presentation {
+  id          String             @id @default(cuid())
+  userId      String
+  user        User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String
+  content     String
+  slideCount  Int                @default(4)
+  style       String?
+  layout      String?
+  prompt      String             @db.Text
+  tone        String
+  slides      Slide[]
+  isPublished Boolean            @default(false)
+  status      PRESENTATIONSTATUS @default(DRAFT)
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  @@index([userId])
+  @@map("presentation")
+}
+
+enum PRESENTATIONSTATUS {
+  DRAFT
+  GENERATING
+  GENERATED
+  FAILED
+}
+
+model Slide {
+  id             String       @id @default(cuid())
+  presentationId String
+  presentation   Presentation @relation(fields: [presentationId], references: [id], onDelete: Cascade)
+  slideNumber    Int
+  title          String
+  content        String       @db.Text
+  imageUrl       String?
+  imagePrompt    String?
+  notes          String?      @db.Text
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@index([presentationId])
+  @@map("slide")
 }

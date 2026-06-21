@@ -21,7 +21,6 @@ export const prisma = basePrisma.$extends({
         return await query(args)
       } catch (err: any) {
         if (RETRYABLE_CODES.includes(err?.code)) {
-          // one retry — the pool will hand us a fresh/healthy connection
           return await query(args)
         }
         throw err

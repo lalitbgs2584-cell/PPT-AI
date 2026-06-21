@@ -31,9 +31,9 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   }
 
   return (
-    <div className="flex min-h-screen w-full overflow-hidden bg-neutral-950 text-neutral-100 font-sans">
+    <div className="grid min-h-screen w-full overflow-hidden bg-neutral-950 font-sans text-neutral-100 lg:grid-cols-[264px_minmax(0,1fr)]">
       <DashboardSidebar session={session} onSignOut={handleSignOut} />
-      <main className="flex-1 overflow-hidden bg-neutral-950">{children}</main>
+      <main className="min-w-0 overflow-hidden bg-neutral-950">{children}</main>
     </div>
   )
 }

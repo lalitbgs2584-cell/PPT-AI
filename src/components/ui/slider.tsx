@@ -38,18 +38,18 @@ function Slider({
     >
       <SliderPrimitive.Track
         data-slot="slider-track"
-        className="relative grow overflow-hidden rounded-4xl bg-oklch(0.967 0.001 286.375) data-horizontal:h-3 data-horizontal:w-full data-vertical:h-full data-vertical:w-3 dark:bg-oklch(0.274 0.006 286.033)"
+        className="relative grow overflow-hidden rounded-full bg-white/8 data-horizontal:h-2 data-horizontal:w-full data-vertical:h-full data-vertical:w-2"
       >
         <SliderPrimitive.Range
           data-slot="slider-range"
-          className="absolute bg-oklch(0.21 0.006 285.885) select-none data-horizontal:h-full data-vertical:w-full dark:bg-oklch(0.92 0.004 286.32)"
+          className="absolute bg-[var(--primary)] select-none data-horizontal:h-full data-vertical:w-full"
         />
       </SliderPrimitive.Track>
       {Array.from({ length: _values.length }, (_, index) => (
         <SliderPrimitive.Thumb
           data-slot="slider-thumb"
           key={index}
-          className="block size-4 shrink-0 rounded-4xl border border-oklch(0.92 0.004 286.32) border-oklch(0.21 0.006 285.885) bg-white shadow-sm ring-oklch(0.705 0.015 286.067)/50 transition-colors select-none hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 dark:border-oklch(1 0 0 / 10%) dark:border-oklch(0.92 0.004 286.32) dark:ring-oklch(0.552 0.016 285.938)/50"
+          className="block size-4 shrink-0 rounded-full border border-white/20 bg-neutral-950 shadow-[0_0_0_4px_rgba(203,163,89,0.12)] ring-[var(--primary)]/35 transition-colors select-none hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
         />
       ))}
     </SliderPrimitive.Root>

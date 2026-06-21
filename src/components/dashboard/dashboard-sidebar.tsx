@@ -45,21 +45,21 @@ const navItems = [
 
 export function DashboardSidebar({ session, onSignOut }: DashboardSidebarProps) {
   return (
-    <aside className="flex w-72 shrink-0 flex-col justify-between border-r border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))] text-neutral-100">
-      <div className="flex flex-col gap-6 p-5">
+    <aside className="sticky top-0 flex h-screen w-[264px] min-w-[264px] max-w-[264px] flex-none flex-col justify-between overflow-y-auto border-r border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.018),rgba(255,255,255,0.008))] text-neutral-100">
+      <div className="flex flex-col gap-5 p-4">
         <Link
           to="/home"
           search={{ screen: 'library' }}
-          className="flex items-center gap-3 rounded-2xl border border-white/5 bg-white/[0.02] px-4 py-3 transition-colors hover:border-white/10 hover:bg-white/[0.04]"
+          className="flex items-center gap-3 rounded-[1.5rem] border border-white/6 bg-white/[0.02] px-4 py-3.5 transition-colors hover:border-white/10 hover:bg-white/[0.04]"
         >
-          <div className="flex size-10 items-center justify-center rounded-xl border border-[var(--primary)]/18 bg-[var(--primary)]/10 text-[var(--primary)]">
+          <div className="flex size-11 items-center justify-center rounded-2xl border border-[var(--primary)]/18 bg-[var(--primary)]/10 text-[var(--primary)]">
             <span className="font-heading text-lg font-semibold">A</span>
           </div>
           <div className="flex flex-col">
             <span className="font-heading text-xl font-semibold tracking-tight text-white">
               Aura
             </span>
-            <span className="text-[10px] uppercase tracking-[0.22em] text-neutral-500">
+            <span className="text-[10px] uppercase tracking-[0.26em] text-neutral-500">
               Design workspace
             </span>
           </div>
@@ -69,21 +69,21 @@ export function DashboardSidebar({ session, onSignOut }: DashboardSidebarProps) 
           to="/home"
           search={{ screen: 'prompt' }}
           className={cn(
-            'inline-flex items-center justify-center gap-2 rounded-full border border-[var(--primary)]/18 bg-[var(--primary)]/10 px-4 py-3 text-sm font-semibold text-[var(--primary)] transition-all hover:border-[var(--primary)]/28 hover:bg-[var(--primary)]/14',
+            'inline-flex items-center justify-center gap-2 rounded-full border border-[var(--primary)]/18 bg-[var(--primary)]/10 px-4 py-3 text-sm font-semibold text-[var(--primary)] transition-all hover:border-[var(--primary)]/26 hover:bg-[var(--primary)]/14',
           )}
         >
           <PlusIcon className="size-4 stroke-[3px]" />
           <span>New deck</span>
         </Link>
 
-        <nav className="flex flex-col gap-1.5 pt-2">
+        <nav className="flex flex-col gap-1.5 pt-1">
           {navItems.map((item) => (
             <Link
               key={item.label}
               to="/home"
               search={item.search}
               activeOptions={{ exact: false, includeSearch: true }}
-              className="group flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-neutral-400 transition-colors hover:bg-white/[0.03] hover:text-white"
+              className="group flex items-center gap-3 rounded-[1.25rem] px-4 py-3 text-sm font-medium text-neutral-400 transition-colors hover:bg-white/[0.03] hover:text-white"
               activeProps={{
                 className:
                   'bg-white/[0.05] text-white ring-1 ring-inset ring-[var(--primary)]/18',
@@ -96,7 +96,7 @@ export function DashboardSidebar({ session, onSignOut }: DashboardSidebarProps) 
         </nav>
       </div>
 
-      <div className="border-t border-white/8 p-5">
+      <div className="border-t border-white/6 p-4">
         <div className="rounded-[1.5rem] border border-white/6 bg-white/[0.02] p-4">
           <div className="flex items-center gap-3">
             <div className="flex size-10 items-center justify-center overflow-hidden rounded-full border border-white/8 bg-white/[0.04] text-[var(--primary)]">

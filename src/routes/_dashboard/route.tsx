@@ -2,20 +2,28 @@ import { Outlet, createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useEffect } from 'react'
 import { authClient } from '#/lib/auth-client'
 import { DashboardLayout } from '#/components/dashboard/dashboard-layout'
+import { ensureSession } from '#/lib/auth.functions'
 
 export const Route = createFileRoute('/_dashboard')({
   component: DashboardLayoutRoute,
+  beforeLoad: async () => {
+    const session = await ensureSession()
+    return {
+      session
+    }
+  }
 })
 
 function DashboardLayoutRoute() {
   const navigate = useNavigate()
-  const { data: session, isPending } = authClient.useSession()
+  const { session } = Route.useRouteContext()
+  const { data: clientSession, isPending } = authClient.useSession()
 
   useEffect(() => {
-    if (!isPending && !session) {
+    if (!isPending && !clientSession) {
       navigate({ to: '/signin' })
     }
-  }, [session, isPending, navigate])
+  }, [clientSession, isPending, navigate])
 
   if (isPending) {
     return (
@@ -30,7 +38,7 @@ function DashboardLayoutRoute() {
     )
   }
 
-  if (!session) {
+  if (!clientSession) {
     return null
   }
 

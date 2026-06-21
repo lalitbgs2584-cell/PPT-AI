@@ -22,3 +22,4 @@ export interface BrandKit {
   fontHeading: 'Noto Serif Variable' | 'Playfair Display' | 'Inter'
   fontSans: 'Public Sans Variable' | 'Roboto' | 'Outfit'
 }
+

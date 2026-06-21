@@ -7,13 +7,11 @@ const PUBLIC_PREFIXES = [
 
 export function isPublicPath(pathname: string) {
     if (pathname === '/') return true
-    return PUBLIC_PREFIXES.some((p) => pathname.startsWith(p))
+    return PUBLIC_PREFIXES.some(
+        (p) => pathname === p || pathname.startsWith(p + '/')
+    )
 }
 
 export function isLoginPath(pathname: string) {
-    return pathname === '/signin'
-}
-
-export function isSignupPath(pathname: string) {
-    return pathname === '/signup'
+    return pathname === '/signin' || pathname === '/signup'
 }
